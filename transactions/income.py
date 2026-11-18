@@ -1,3 +1,6 @@
+from utils.decorators import log_action,validate_amount
+@log_action
+@validate_amount
 def add_income():
     print("\n========== ADD INCOME ==========")
     source=input("Enter Income Source :")
